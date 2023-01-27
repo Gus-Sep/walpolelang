@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: #ffffff;
+}
+
+/* Style the header */
+.header {
+  grid-area: header;
+  background-color: #042350;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+}
+
+/* The grid container */
+.grid-container {
+  display: grid;
+  grid-template-areas: 
+    'header header header header header header' 
+    'left left middle middle middle right' 
+    'footer footer footer footer footer footer';
+  /* grid-column-gap: 10px; - if you want gap between the columns */
+} 
+
+
+/* Style the left column */
+.left {
+  grid-area: left;
+  background-color:#F65C02;
+  
+}
+
+/* Style the middle column */
+.middle {
+  grid-area: middle;
+  background-color:#042350;
+  
+}
+
+/* Style the right column */
+.right {
+  grid-area: right;
+  background-color:#F65C02;
+  
+
+}
+
+/* Style the footer */
+.footer {
+  grid-area: footer;
+  background-color: #042350;
+  padding: 10px;
+  text-align: center;
+}
+
+</style>
+</head>
+<body>
+ 
+ 
+  <div class="grid-container">
+    <div class="header">
+      <h1> Walpole High School</h1>
+  <h2> Foreign Language</h2>
+    </div>
+
+
+
+<div class="left">
+  
+    <h3>Benefits </h3>
+    <h4>Why you should take a language </h4>
+  <br>
+  <img src="images/BilingualBrain.png" width="300">
+  </div>
+  
+  <div class="middle">
+    <h3>About the Department </h3>
+    The goal of the World Language Department is communicative proficiency in a second language. The Massachusetts Curriculum Frameworks states, “All Massachusetts students should acquire linguistic and cultural proficiency in at least one language in addition to English .” To accomplish this will require time, effort, and daily practice on the part of the student as well as a commitment to the longest sequence possible.Walpole teachers and students share the vision of the Massachusetts Frameworks, which states that all students of all ages and at all levels of proficiency will use the target language to:
+   
+    <ul>
+    <li>communicate with users of the target language, especially those in their schools and communities;</li>
+    <li>explore and celebrate the products, practices, and perspectives of other cultures;</li>
+    <li>compare their own languages and cultures with those of the target communities;</li>
+    <li>expand their academic knowledge of other disciplines;</li>
+    <li>serve and lead in their academic, local, and global communities;</li>
+    <li>become lifelong beneficiaries of the opportunities that proficiency in  multiple languages can offer them</li>
+    <li>become agents of change that promote equity, global awareness, and multicultural understanding.</li>
+  </ul>
+</div>
+  <div class="right">
+    <h3>Course Offerings: </h3>
+    <ul>
+<li> French I, II, III, IV, V CP1, </li>
+<li> French II, III, IV HONORS </li>
+<li> French VH/AP </li>
+<li> Latin Language and Culture I and II CP2 </li>
+<li> Latin I, II, III, IV </li>
+<li> Latin I, II, III HONORS </li>
+<li> Latin IVH / Latin IV Dual Enrollment with UMass Boston </li>
+<li> Greek Mythology </li>
+<li> Spanish Language and Culture I and II CP2 </li>
+<li> Spanish I, II, III, IV, V CP1 </li>
+<li> Spanish II, III, IV, V HONORS </li>
+<li> Spanish VAP </li>
+</ul>
+</div>
+
+
+ <div>
+<img src="images/timberwolf.png"width="250" height="250">
+<img src="images/foreign-language.png" width="450" height="250">
+
+<div class="footer">
+  <p>G Sepulvida</p>
+</div>
+
+</div>
+</body>
+</html>
+
